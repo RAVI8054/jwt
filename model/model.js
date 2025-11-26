@@ -2,8 +2,8 @@ import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
 const register = new Schema({
-    name: String,
-    lastname: String,
+    username: String,
+    password: String,
     email: String,
 });
 
