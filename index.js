@@ -1,3 +1,4 @@
+import cookieParser from 'cookie-parser'
 import express from 'express'
 import mongoose from 'mongoose'
 
@@ -9,7 +10,10 @@ connection.then(
 ).catch(err => console.log(err))
 const app = express()
 
-app.express()
+app.use(express.json())
+app.use(cookieParser())
+
+
 
 app.get('/', (req, res) => {
     res.send('Hello World')
